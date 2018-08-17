@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("STEVE.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">STEV-E</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#therobot" class="w3-bar-item w3-button"><i class="fa fa-power-off"></i>THE ROBOT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> THE TEAM</a>
+      <a href="#competition" class="w3-bar-item w3-button"><i class="fa fa-bomb"></i> THE COMPETITION</a>
+      <a href="#components" class="w3-bar-item w3-button"><i class="fa fa-wrench"></i>THE COMPONENTS </a>
+       <a href="#results" class="w3-bar-item w3-button"><i class="fa fa-flag"></i> THE RESULTS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#therobot" onclick="w3_close()" class="w3-bar-item w3-button">THE ROBOT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">THE TEAM</a>
+  <a href="#competition" onclick="w3_close()" class="w3-bar-item w3-button">THE COMPETITION</a>
+  <a href="#components" onclick="w3_close()" class="w3-bar-item w3-button">THE COMPONENTS</a>
+  <a href="#results" onclick="w3_close()" class="w3-bar-item w3-button">THE RESULTS</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container " id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">STEV-E:</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">STEV-E:</span><br>
+    <span class="w3-large">The Robot that Broke Our Heart</span>
+    
+  </div> 
+  
+</header>
+
+   <!-- The Robot Section -->
+    
+  <div class="w3-container w3-center w3-padding-64 w3-light-grey"  id="therobot">
+      <div class="w3-content">
+    <h2 class="w3-wide">THE ROBOT</h2>
+    <p class="w3-opacity"><i>ENPH 253 Summer Robotics Competition</i></p>
+    <p class="w3-justify">STEV-E took 12 hours in a lab, 5 days a week for just over a month to build and while we had a lot of success the days and weeks leading up to competition, the robot failed the morning of, ultimately resulting in a last place finish. This is the story of a robot called STEV-E, the ways in which it succeeded, the ways in which it failed, and everything we have taken away from the experience.</p>
+      
+  <iframe width="600" height="400" src="https://www.youtube.com/embed/4N2IUyzRUxs?controls=0">
+</iframe>
+
+    </div>  
+    </div>
+    
+  
+    
+    <!-- Team Section -->
+<div class="w3-container"  id="team">
+  <h2 class="w3-center">THE TEAM</h2>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="JohnKuur.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John van der Kuur</h3>
+          <p class="w3-opacity">Software and Electronics</p>
+          <p>I am an engineering physics student with a keen interest in implementing software and electrical engineering. My main role on this robot was working with the microcontrollers to figure out the firmware including port manipulation and timer controls, communication between microcontrollers, and also a major contributor  to the electrical circuit design/troubleshooting. Building this robot provided me with a newly discovered interest in low-level programming and firmware implementation, as well as  electrical circuit design. 
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="JonahGourlay.jpg" alt="Jonah" style="width:100%">
+        <div class="w3-container">
+          <h3>Jonah Gourlay</h3>
+          <p class="w3-opacity">Mechanical Design</p>
+          <p>I am a third year engineering student at UBC with a passion for automotive engineering. I contributed largely to the overall mechanical design of the robot. I also built and installed both the IR circuit and bluetooth unto the robot. My experience over the summer has taught me a lot about mechanical design and troubleshooting electronics. This robot has given me a new found appreciation for the design process and the importance of design iteration. In my spare time I enjoy mountain biking, making my own music and collecting stamps. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="DanielB.jpg" alt="Daniel" style="width:100%">
+        <div class="w3-container">
+          <h3>Daniel Backhouse</h3>
+          <p class="w3-opacity">Mechanical Design</p>
+          <p>As a third-year engineering physics student with an interest in the applications of engineering in medicine, I spend my time outside of the classroom working at the Aging, Mobility and Cognitive Neurosciences Lab at Vancouver General Hospital and giving music therapy to older adults at a residential care facility in Richmond. My experiences working as a mechanical assistant for VR Avionics Canada helped in preparing for ENPH 253. In my spare time I like to stay active by boxing and have a keen interest in both cars and motorcycles.</p>
+          <p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="JeremyWiens.jpg" alt="Jeremy" style="width:100%">
+        <div class="w3-container">
+          <h3>Jeremy Wiens</h3>
+          <p class="w3-opacity">Software and Electronics</p>
+          <p>I am a third year engineering student at the University of British Columbia. Over the summer, I contributed largely to the software and electronics of the robot. Working on STEV-E over the summer has further improved my abilites in programming and electronic troubleshooting, learning useful techniques such as decoupling to improve reliability of the robot. Writing PID code for the robot helped give me a better understanding of control theory and it's applications. I have a keen interest in software development and electronics.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <!--The competition -->
+  <div class="w3-row w3-light-grey" id="competition">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="Competition%20Surface.JPG" class="w3-round w3-image w3-opacity-min" alt="Competition Surface" width="600" height="900">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">The Competition</h1><br>
+      <h5 class="w3-center">Ewok Rescue</h5>
+      <p class="w3-large">Our task this summer was to design and build a robot that could complete the course given to us by the instructors. This year’s course required robots to rescue four Ewok and one Chewbacca stuffy toys from the competition surface with various obstacles such as six-inch gaps and a rotating platform triggered by breaking an IR beam. Once rescued, the Ewoks had to be returned to the starting platform. Points were awarded for both pickup and return of the Ewoks/
+    </div>
+  </div>
+  
+  <hr>
+
+<!-- The Componenets -->
+    
+<div class="w3-container" id="components">
+    <h1 class="w3-center">THE COMPONENTS</h1>
+        <div>
+            <h3 class="w3-center">The Chassis and Plate Dropper</h3>
+            
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="PlateHinges.jpg" class="w3-round w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The hinges on the sides of the plates were designed so that the plates would release when angled parallel to the competition surface.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Chassis%20Screenshot.JPG" class="w3-round w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The chassis was boxed shape, intended to house the electrical components and motors that drove the robot. The plate drop mechanism and plates were used to cross the two gaps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div>
+        <h3 class="w3-center">The Claw and Bucket</h3>
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Claws%20Image.JPG" class="w3-round  w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The claws were extended out enough to grab Ewok’s located within 6-10inches from the tape. The claws are lightweight in order to be raised by the servo motor.</p>   
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Bucket%20Image.jpg" class="w3-round w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The bucket held the Ewoks and was designed to tip based on its centre of mass. The hooks above were used when raising the bucket to attatch it to the zipline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div>
+            
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="ClawContactMechanism.jpg" class="w3-round  w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The claws detected Ewok’s using a contact sensor switch mounted to the bottom of the claw arms. The robot would run into them with the contact and the claws would close and raise the Ewok into the bucket.</p>   
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Backup%20Contacts%20and%20Arm.png" class="w3-round w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>Once the third Ewok had been picked up, the robot would reverse into the side skirt, triggering two contacts (red), the servo (green) would then lower, and the bucket would dump the Ewoks back at the starting platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div>
+        <h3 class="w3-center">The Electronics and Software</h3>
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Blue%20Pills.jpg" class="w3-round  w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The robot was controlled by  two blue pill stm32's that communicated using an I2C port. The master controlled tape following and the slave controlled the servos and encoders. </p>   
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Encoders.jpg" class="w3-round w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>Rotary encoders were used to track the number of rotations the wheels made, allowing us to track our location on the surface without the use of tape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div>
+            
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="IR%20.jpg" class="w3-round  w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>An IR detector circuit was built to detect the frequency emitted by the IR beacon in order to pass through the archway without tripping the beam.</p>   
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin-bottom: 25px">
+                    <div class="w3-card">
+                        <div class="w3-container" style="min-height: 450px">
+                            <img src="Tape_following.JPG" class="w3-round w3-image" alt="Competition Surface" width="600" height="900">
+                            <p>The robot used two sets of QRD sensors to follow the black tape laid down on the white competition surface. The sensors were set on an active height adjustment mechanism. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <h3 class="w3-center">Software</h3>
+         <p class="w3-center"><a href="https://github.com/jeremywiens/Stev-e_ENPH253">To View STEV-E's Software Click Here.</a></p>
+    </div>
+    
+</div>
+
+
+    
+<!-- Final Performance and Analysis -->
+<div class="w3-container w3-light-grey" id="results" >
+    <div class="w3-row-padding">
+         <h2 class="w3-center">Final Performance and Analysis</h2>
+        <div class="w3-half">
+                <div class="w3-container w3-dark-grey w3">
+                    <h3>Final Result:</h3>
+                    <span class="w3-xxlarge"><b>16th Place</b></span>
+                </div><br>
+            <p>STEV-E failed to score a single point come competition time, placing him in last place. At 6am our robot became unable to follow tape and became unresponsive to input from any of its sensors.</p>
+            
+            <h3>The Malfunctioning Component</h3>
+            <p>The malfunctioning component on competition day was the I2C communication between the blue pills. The master blue pills inability to communicate with the slave meant that all sensors, including those used for tape following, were rendered useless and the master was unable to receive input or send output to the slave. </p>
+            <h3>Point of Weakness</h3>
+            <p>Our point of failure, above all else, was a lack of design iteration. Our robot was one of the first to be completed and was also the first robot to successfully pickup and dump three Ewoks. However, the speed we progressed at came at the cost of an increasingly poor design. We started with our initial design, but as we realized the need for more components and sensors as well as fixes to the initial design, we simply began attaching and modifying the existing robot. As a result, STEV-E became increasingly messy. This left us vulnerable to problems in reliability which ultimately came back to haunt us. The faulty communication between the master and slave blue pills on competition day was simply a consequence of this. </p>
+        </div>
+        
+        <div class="w3-half" >
+            <img class="w3-image w3-round-large " src="STEVE_failing.jpg" alt="Buildings">
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <p>Powered by Sponsor</p>
+</footer>
+
+
+</body>
+</html>
